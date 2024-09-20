@@ -32,7 +32,7 @@ class Clock{
     }
     //Conversion Formula of Hours to Minutes
     public void HoursToMinutes(float x){
-        minutes = x/60;
+        minutes = x*60;
         System.out.println("Hours to Miuntes: "+minutes);
     }
 }
