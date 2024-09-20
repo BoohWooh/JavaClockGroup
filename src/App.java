@@ -25,6 +25,16 @@ class Clock{
         System.out.println("Minutes to Hours: "+hours);
 
     }
+    //Conversion Formula of Hours to Seconds
+    public void HoursToSeconds(float x){
+        seconds = x*60;
+        System.out.println("Hours to Seconds: "+seconds);
+    }
+    //Conversion Formula of Hours to Minutes
+    public void HoursToMinutes(float x){
+        minutes = x/60;
+        System.out.println("Hours to Miuntes: "+minutes);
+    }
 }
 
 public class App {
@@ -73,12 +83,16 @@ public class App {
                     break;
                     
                 case 5:
-                    System.out.println("Thank you for using our program!");
-                    
+                    // Showing Result of the Conversion
+                    System.out.println("Enter the Value; ");
+                    float seconds1 = input.nextFloat();
+                    Time.HoursToSeconds(seconds1);
                     break;
                 case 6:
-                    System.out.println("Thank you for using our program!");
-                    
+                    // Showing Result of the Conversion 
+                    System.out.println("Enter the Value; ");
+                    float minutes2 = input.nextFloat();
+                    Time.HoursToMinutes(minutes2);
                     break;
                 case 7:
                     System.out.println("Thank you for using our program!");
