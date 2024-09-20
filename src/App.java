@@ -27,7 +27,7 @@ class Clock{
     }
     //Conversion Formula of Hours to Seconds
     public void HoursToSeconds(float x){
-        seconds = x*60;
+        seconds = x*3600;
         System.out.println("Hours to Seconds: "+seconds);
     }
     //Conversion Formula of Hours to Minutes
