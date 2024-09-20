@@ -17,6 +17,20 @@ class Clock{
         return 0;
     }
 
+    public float MinutesToSeconds(float x){
+        seconds = x*60;
+        System.out.println("Minutes to Seconds: "+seconds);
+        return 0;
+    }
+
+    public float MinutesToHours(float x){
+        hours = x/60;
+        System.out.println("Minutes to Hours: "+hours);
+        return 0;
+    }
+
+
+
 
 
 }
@@ -54,13 +68,17 @@ public class App {
                     continue;
 
                 case 3:
-                    System.out.println("Thank you for using our program!");
-                    
+                    System.out.println("Enter the Value: ");
+                    float minutes = input.nextFloat();
+                    Time.MinutesToSeconds(minutes);
                     continue;
+
                 case 4:
-                    System.out.println("Thank you for using our program!");
-                    
+                    System.out.println("Enter the Value; ");
+                    float minutes1 = input.nextFloat();
+                    Time.MinutesToHours(minutes1);                    
                     continue;
+                    
                 case 5:
                     System.out.println("Thank you for using our program!");
                     
